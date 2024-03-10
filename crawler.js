@@ -10,7 +10,7 @@ async function crawlWebsite(url) {
         await page.goto(url);
         const pageTitle = await page.title();
         console.log(`Title of ${url}: ${pageTitle}`);
-        
+
         // You can add more logic here to extract specific data from the page
         // For example, find and print all links on the page:
         const links = await page.evaluate(() => {
